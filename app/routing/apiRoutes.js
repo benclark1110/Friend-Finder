@@ -4,8 +4,8 @@
 // These data sources hold arrays of information on table-data, waitinglist, etc.
 // ===============================================================================
 
-var tableData = require("../data/tableData");
-var waitListData = require("../data/waitinglistData");
+var friends = require("../data/friends");
+//var waitListData = require("../data/waitinglistData");
 
 
 // ===============================================================================
@@ -20,10 +20,10 @@ module.exports = function(app) {
   // ---------------------------------------------------------------------------
 
   app.get("/api/friends", function(req, res) {
-    res.json(tableData);
+    res.json(friends);
   });
 
-  app.post("/api/friends", function(req, res) {
-    res.json(waitListData);
-  });
+//   app.post("/api/friends", function(req, res) {
+//     res.json(waitListData);
+//   });
 };
