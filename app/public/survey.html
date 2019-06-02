@@ -5,17 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   <title>Survey</title>
 </head>
 
@@ -27,17 +20,17 @@
     <form>
       <div class="form-group">
         <label for="exampleFormControlInput1">Name (required)</label>
-        <input type="text" class="form-control" id="exampleFormControlInput1">
+        <input type="text" class="form-control" id="friendName">
       </div>
       <div class="form-group">
         <label for="exampleFormControlInput1">Link to Photo Image (required)</label>
-        <input type="text" class="form-control" id="exampleFormControlInput1">
+        <input type="text" class="form-control" id="friendImage">
       </div>
       <hr class="my-4">
       <div class="form-group">
         <h3><label for="exampleFormControlSelect1">Question 1</label></h3>
         <h4>blah blah blah</h4>
-        <select class="form-control" id="exampleFormControlSelect1">
+        <select class="form-control" id="question1">
           <option>1 (Strongly Agree)</option>
           <option>2</option>
           <option>3</option>
@@ -48,7 +41,7 @@
       <div class="form-group">
         <h3><label for="exampleFormControlSelect1">Question 2</label></h3>
         <h4>blah blah blah</h4>
-        <select class="form-control" id="exampleFormControlSelect1">
+        <select class="form-control" id="question2">
           <option>1 (Strongly Agree)</option>
           <option>2</option>
           <option>3</option>
@@ -59,7 +52,7 @@
       <div class="form-group">
         <h3><label for="exampleFormControlSelect1">Question 3</label></h3>
         <h4>blah blah blah</h4>
-        <select class="form-control" id="exampleFormControlSelect1">
+        <select class="form-control" id="question3">
           <option>1 (Strongly Agree)</option>
           <option>2</option>
           <option>3</option>
@@ -70,7 +63,7 @@
       <div class="form-group">
         <h3><label for="exampleFormControlSelect1">Question 4</label></h3>
         <h4>blah blah blah</h4>
-        <select class="form-control" id="exampleFormControlSelect1">
+        <select class="form-control" id="question4">
           <option>1 (Strongly Agree)</option>
           <option>2</option>
           <option>3</option>
@@ -81,7 +74,7 @@
       <div class="form-group">
         <h3><label for="exampleFormControlSelect1">Question 5</label></h3>
         <h4>blah blah blah</h4>
-        <select class="form-control" id="exampleFormControlSelect1">
+        <select class="form-control" id="question5">
           <option>1 (Strongly Agree)</option>
           <option>2</option>
           <option>3</option>
@@ -92,7 +85,7 @@
       <div class="form-group">
         <h3><label for="exampleFormControlSelect1">Question 6</label></h3>
         <h4>blah blah blah</h4>
-        <select class="form-control" id="exampleFormControlSelect1">
+        <select class="form-control" id="question6">
           <option>1 (Strongly Agree)</option>
           <option>2</option>
           <option>3</option>
@@ -103,7 +96,7 @@
       <div class="form-group">
         <h3><label for="exampleFormControlSelect1">Question 7</label></h3>
         <h4>blah blah blah</h4>
-        <select class="form-control" id="exampleFormControlSelect1">
+        <select class="form-control" id="question7">
           <option>1 (Strongly Agree)</option>
           <option>2</option>
           <option>3</option>
@@ -114,7 +107,7 @@
       <div class="form-group">
         <h3><label for="exampleFormControlSelect1">Question 8</label></h3>
         <h4>blah blah blah</h4>
-        <select class="form-control" id="exampleFormControlSelect1">
+        <select class="form-control" id="question8">
           <option>1 (Strongly Agree)</option>
           <option>2</option>
           <option>3</option>
@@ -125,7 +118,7 @@
       <div class="form-group">
         <h3><label for="exampleFormControlSelect1">Question 9</label></h3>
         <h4>blah blah blah</h4>
-        <select class="form-control" id="exampleFormControlSelect1">
+        <select class="form-control" id="question9">
           <option>1 (Strongly Agree)</option>
           <option>2</option>
           <option>3</option>
@@ -136,7 +129,7 @@
       <div class="form-group">
         <h3><label for="exampleFormControlSelect1">Question 10</label></h3>
         <h4>blah blah blah</h4>
-        <select class="form-control" id="exampleFormControlSelect1">
+        <select class="form-control" id="question10">
           <option>1 (Strongly Agree)</option>
           <option>2</option>
           <option>3</option>
@@ -144,9 +137,62 @@
           <option>5 (Strongly Disagree)</option>
         </select>
       </div>
-      <button type="submit" class="btn btn-primary btn-block">Submit</button>
+      <button id="testingSubmit" type="submit" class="btn btn-primary btn-block">Submit</button>
     </form>
   </div>
+
+  <script>
+    $("#testingSubmit").on("click", function(event) {
+        event.preventDefault();
+        console.log("working");
+        var potentialFriend = {
+              name: $("#friendName").val(),
+              image: $("#friendImage").val(),
+              answers: [
+              $("#question1").val(),
+              $("#question2").val(),
+              $("#question3").val(),
+              $("#question4").val(),
+              $("#question5").val(),
+              $("#question6").val(),
+              $("#question7").val(),
+              $("#question8").val(),
+              $("#question9").val(),
+              $("#question10").val()
+              ]
+            };
+
+        //Checking to make sure the form was filled out completely 
+        if (potentialFriend.name == "" || potentialFriend.image == "") {
+          potentialFriend = {};
+          alert("Please enter all necessary fields");
+        }
+
+        console.log(potentialFriend);
+    });
+
+    $.post("/api/tables", newReservation,
+      function(data) {
+
+        // If a table is available... tell user they are booked.
+        if (data) {
+          alert("Yay! You are officially booked!");
+        }
+
+        // If a table is available... tell user they on the waiting list.
+        else {
+          alert("Sorry you are on the wait list");
+        }
+
+        // Clear the form when submitting
+        $("#reserve-name").val("");
+        $("#reserve-phone").val("");
+        $("#reserve-email").val("");
+        $("#reserve-unique-id").val("");
+
+    });
+  </script>
+
 </body>
 
 </html>
