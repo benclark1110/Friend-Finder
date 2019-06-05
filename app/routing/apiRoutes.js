@@ -24,17 +24,24 @@ module.exports = function(app) {
   });
 
   app.post("/api/friends", function(req, res) {
-    //friends.push(req.body);
-    var userAnswers = req.body.answers;
-    var newArr = [];
-    for (i = 0; userAnswers.length; i++) {
-      parseInt(userAnswers[i], 2);
-    }
+    friends.push(req.body);
+
+    
+
+    // var userAnswers = req.body.answers;
+    // var newArr = [];
+    // for (i = 0; userAnswers.length; i++) {
+    //   parseInt(userAnswers[i], 2);
+    // }
     
     // for (i = 0; i < friends.length; i++) {
 
     // }
-    console.log(userAnswers);
-    console.log(friends[0].answers);
+    // console.log(userAnswers);
+    // console.log(friends[0].answers);
+    function testing() {
+      console.log("BOOOOOOOM");
+    testing();
+    }
   });
 };

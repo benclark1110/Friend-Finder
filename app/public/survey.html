@@ -137,9 +137,34 @@
           <option value="5">5 (Strongly Disagree)</option>
         </select>
       </div>
-      <button id="testingSubmit" type="submit" class="btn btn-primary btn-block">Submit</button>
+      <button id="testingSubmit" type="submit" class="btn btn-primary btn-block"  data-target="#exampleModalCenter">Submit</button>
     </form>
-  </div>
+
+    <!-- Button trigger modal -->
+    <!-- <button type="button" class="btn btn-primary" >
+      Launch demo modal
+    </button> -->
+
+    <!-- Modal -->
+    <div id="totallyModal" class="modal" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Modal title</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>Modal body text goes here.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary">Save changes</button>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
   <script>
     $("#testingSubmit").on("click", function(event) {
@@ -149,7 +174,7 @@
               name: $("#friendName").val(),
               image: $("#friendImage").val(),
               answers: [
-              $("#question1").parseInt().val(),
+              $("#question1").val(),
               $("#question2").val(),
               $("#question3").val(),
               $("#question4").val(),
@@ -168,25 +193,37 @@
           alert("Please enter all necessary fields");
         } else {
           $.post("/api/friends", potentialFriend,
+            //posting the potentialFriend variable to the above route
             function(data) {
+              $("#totallyModal").modal("show");
+            // function checkForBestMatch() {
+            //   $.get("/api/friends", friends,
+            //     function(data) {
 
-            // Clear the form when submitting
-            $("#friendName").val("");
-            $("#friendImage").val("");
-
-
-            function checkForBestMatch() {
-              $.get("/api/friends", friends,
-                function(data) {
-
-            console.log(friends)
+            //   console.log(friends)
+            //   });
+            // }
+            // checkForBestMatch();
           });
-    }
-            checkForBestMatch();
-          });
+          // Clear the form when submitting
+          $("#friendName").val("");
+          $("#friendImage").val("");
+          $("#question1").val(1);
+          $("#question2").val(1);
+          $("#question3").val(1);
+          $("#question4").val(1);
+          $("#question5").val(1);
+          $("#question6").val(1);
+          $("#question7").val(1);
+          $("#question8").val(1);
+          $("#question9").val(1);
+          $("#question10").val(1);
+          //scrolling back to the top of the page after submitting
+          $('html, body').animate({ scrollTop: 0 }, 'fast');
+          potentialFriend = {};
         };
 
-        console.log(potentialFriend);
+        
     });
 
     
