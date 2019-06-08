@@ -41,7 +41,7 @@ module.exports = function(app) {
     // console.log(friends[0].answers);
     function testing() {
       console.log("BOOOOOOOM");
+    };
     testing();
-    }
   });
 };
